@@ -6,6 +6,7 @@
 \usepackage{hyperref}
 \usepackage{csquotes}
 \usepackage[a4paper]{geometry}
+\usepackage{graphicx}
 
 \usepackage[
     backend=biber,
@@ -24,35 +25,41 @@
 \addbibresource{../references/bibliography.bib}
 
 
-\title{Ethik im Umgang mit Daten}
-\author{Name des Autors}
+\title{Ethik und Daten in der KI}
+\author{Luka Adjancic}
 \date{\today}
 
+\parskip=2em
+\parindent=1em
+\renewcommand{\familydefault}{\sfdefault}
 
 \begin{document}
 
-\maketitle
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{AI.jpg}
+    \caption{Künstliche Intelligenz als Bild dargestellt}
+    \label{fig:AI}
+\end{figure}
 
-\abstract{
-    Dies ist eine Vorlage für eine Maturarbeit in der Informatik am Gymnasium Muttenz. Sie dient dazu, die Arbeit schnell und einfach zu starten und sollte einen guten Überblick über die Arbeit bieten.
-}
+\maketitle
 
 \tableofcontents
 
 \chapter{Einleitung}
 
-Hier kommt die Einführung. Der Text hier sollte eigentlich noch viel länger sein, so das hier nicht so merkwürdige Umbrüche entstehen.
+In diesem Dokument handelt es sich um das Thema Ethik und Daten. Ein grossteil dieser Fragen wurden mit einer KI beantwortet. Jedoch wurden bestimmte Fragen nicht nur von KI beantwortet, sondern auch von Mir. Das Dokument befasst sich mit der Ethik der KI und wie sie Daten speichert und verwendet. 
 
-Ich kann weitere Kapitel auch importieren.
+\input{chap_ai.tex}
 
-\input{chap_methode.tex}
+\input{chap_ethics.tex}
 
-\section{Etwas mit Quellen}
-
-Etwas mit Änderung hier am Ende.
-
-Wenn ich eine Quelle zitieren möchte, kann ich das ganze einfach am Ende des Satzes machen \citep{example}. Oder wie \citet{example} sagt, auch mitten im Text.
+\input{chap_data.tex}
 
 \printbibliography
+
+\nocite{*}
+
+\listoffigures
 
 \end{document}

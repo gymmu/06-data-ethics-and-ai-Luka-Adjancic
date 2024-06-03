@@ -5,6 +5,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
 \usepackage{csquotes}
+\usepackage[a4paper]{geometry}
 
 \usepackage[
     backend=biber,
@@ -22,17 +23,83 @@
     eprint=false]{biblatex}
 \addbibresource{../references/bibliography.bib}
 
-\title{Review des Papers "Ethik im Umgang mit Daten" von \dots}
-\author{Name des Autors}
+\title{Review des Papers "KI im Ethischen Gebrauch" von Yanic Nef}
+\author{Luka Adjancic}
 \date{\today}
+
+\parskip=2em
+\parindent=1em
+\renewcommand{\familydefault}{\sfdefault}
 
 \begin{document}
 \maketitle
 
 \abstract{
-    Dies ist ein Review der Arbeit zum Thema Ethik im Umgang mit Daten von <Name des Authors>.
+    Dies ist ein Review der Arbeit zum Thema KI im Ethischen Gebrauch von Yanic Nef.
 }
 
+\newpage
+
+\section{Positive Aspekte}
+
+\begin{itemize}
+    \item Es wurden viele Themen behandelt.
+    \item Die Themen wurden in Sections und Subsections unterteilt.
+    \item Die Themen wurden sehr gut erklärt.
+    \item Die KI wurde sehr gut erklärt.
+    \item Alle Quellen wurden angegeben.
+    \item Die bibliography wurde richtig eingetragen.
+    \item Der Titel wurde umgeändert.
+\end{itemize}
+
+\section{Negative Aspekte}
+
+\begin{itemize}
+    \item Kapitel wurden nicht in Dateien unterteilt.
+    \item Bilder fehlen.
+    \item Es wurde nicht zitiert.
+\end{itemize}
+
+\section{Abschnitt vom Benotungsraster}
+
+\begin{table}[h]
+    \centering
+    \label{JustTable}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    Wird verlangt & Erledigt & Fehlt \\
+    \hline
+    Gibt es eine Fragestellung, der in der Arbeit nachgegangen wird? & X &  \\
+    \hline
+    Wird die Fragestellung ausführlich diskutiert und mit Quellen hinterlegt? & X &  \\
+    \hline
+    Hat die Arbeit einen roten Faden? & X &  \\
+    \hline
+    Wurden die Quellen jeweils angegeben? & X &  \\
+    \hline
+    Wie gut wird der Zusammenhang von Daten und dem Training von KIs erklärt? & X &  \\
+    \hline
+    Macht die Einleitung klar wie KIs funktionieren? & X &  \\
+    \hline
+    Gibt es eine gute Überleitung zur Fragestellung? & X &  \\
+    \hline
+    Werden verschiedene Features von \LaTeX\ verwendet (zitieren, Listen, Bilder, Verweise, …)? &  & X \\
+    \hline
+    Werden die Quellen angegeben? & X &  \\
+    \hline
+    Sind die Einträge in der Bibliographie korrekt? & X &  \\
+    \hline
+    Wurde die Arbeit in einzelne Dateien aufgeteilt? &  & X \\
+    \hline
+    Gibt es Änderungen am Titelblatt? & X &  \\
+    \hline
+    \end{tabular}
+\end{table}
+
+
+\section{Verbessungsvorschläge}
+
+Es müssen nur die \textbf{Kapitel} aufgeteilt werden in andere \TeX\ Dateien und Abbildungen aber auch Zitatete verwendet werden.
 
 \printbibliography
 
